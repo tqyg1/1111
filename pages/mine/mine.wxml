@@ -1,0 +1,32 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="page-body">
+  <view class="page-section">
+         <open-data class="image" type="userAvatarUrl"></open-data>
+         <view><open-data class="text" type="userNickName"></open-data></view>
+    <view class="textarea-wrp">
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">星座</view>
+    <view class="textarea-wrp">
+      <textarea auto-focus="true" style="height: 1em" />
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">个性签名</view>
+    <view class="textarea-wrp">
+      <textarea auto-focus="true" style="height: 1em" />
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="page-section-title">和你的专属天气助手打个招呼吧！</view>
+    <view class="textarea-wrp">
+      <textarea auto-focus="true" style="height: 2em" />
+    </view>
+  </view>
+</view>
+  
