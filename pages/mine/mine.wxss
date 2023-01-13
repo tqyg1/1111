@@ -1,1 +1,90 @@
-/* pages/mine/mine.wxss */
+.container{
+  background-color: #eeeeee;
+  height : 100vh;
+}
+.partOne {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a7d3e8;
+  padding-top: 200rpx;
+  padding-bottom: 200rpx;
+  width: 400px;
+  height: 400px;
+}
+.userinfo {
+  display: flex;
+  align-items: center;
+  height: 128rpx;
+  margin-left: 40rpx;
+  color: rgb(255, 255, 255);
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  height: 128rpx;
+}
+.partOne .scanicon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 128rpx;
+  margin-right: 80rpx;
+}
+.partOne .scanicon image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.partTwo{
+  height: 200rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 80rpx;
+  background-color: #ffffff;
+  border: 1rpx solid rgb(176, 176, 176);
+  border-radius: 25rpx;
+}
+.partTwo .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+}
+.partTwo .item .itemname{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 210rpx;
+  margin-left: 20rpx;
+}
+
+
+.partThree{
+  height: 300rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10rpx;
+  background-color: #ffffff;
+  border: 1rpx solid rgb(176, 176, 176);
+  border-radius: 25rpx;
+}
+
+.partThree .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+}
+.partThree .item .itemname{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 210rpx;
+  margin-left: 20rpx;
+}
