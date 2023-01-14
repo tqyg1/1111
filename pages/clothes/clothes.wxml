@@ -1,25 +1,65 @@
-<view class="content">
-	<image class='background' src="../../icon/1.jpg" mode="aspectFill"></image>
-
-	<!--页面其它部分-->
-
-  <!--上衣推荐-->
-  <view>
-      <label>上衣推荐：</label>
+<!--pages/life/life.wxml-->
+<view class="the-life">
+  <view class="life-com">
+    <view class="life-list" wx:if="{{lifeList.length>0}}">
+      <block wx:for='{{lifeList}}' wx:for-item='v' wx:key='k'>
+        <view class="btn blue">
+          <text> 穿衣指南 : {{v.text}} </text>
+        </view>
+      </block>
+    </view>
   </view>
-
-  <!--裤子推荐-->
-  <view>
-    <label>裤子推荐：</label>
-  </view>
-
-  <!--鞋子推荐-->
-  <view>
-    <label>鞋子推荐：</label>
-  </view> 
-
-
 </view>
-
-
-
+<view class="wea-bot">
+    <view class="thk"><text>建议参考的因素：</text></view>
+    <view class="wea-info-list">
+      <view class="li" wx:if="{{dailyList.length>0}}">
+        <view class="ti">日出时间</view>
+        <view class="tn">{{dailyList[0].sunrise}}</view>
+      </view>
+      <view class="li" wx:if="{{dailyList.length>0}}">
+        <view class="ti">日落时间</view>
+        <view class="tn">{{dailyList[0].sunset}}</view>
+      </view>
+      <view class="li" wx:if="{{dailyList.length>0}}">
+        <view class="ti">月升时间</view>
+        <view class="tn">{{dailyList[0].moonrise}}</view>
+      </view>
+      <view class="li" wx:if="{{dailyList.length>0}}">
+        <view class="ti">月落时间</view>
+        <view class="tn">{{dailyList[0].moonset}}</view>
+      </view>
+      <view class="li" wx:if="{{dailyList.length>0}}">
+        <view class="ti">紫外线强度</view>
+        <view class="tn" wx:if="{{dailyList.length>0}}">{{dailyList[0].uvIndex}}</view>
+      </view>
+      <view class="li">
+        <view class="ti">体感温度</view>
+        <view class="tn">{{weatherInfo.feelsLike}}°</view>
+      </view>
+      <view class="li">
+        <view class="ti">降水量</view>
+        <view class="tn">{{weatherInfo.precip}}毫米</view>
+      </view>
+      <view class="li">
+        <view class="ti">云量</view>
+        <view class="tn">{{weatherInfo.cloud}}%</view>
+      </view>
+      <view class="li">
+        <view class="ti">风向</view>
+        <view class="tn">{{weatherInfo.windDir}}</view>
+      </view>
+      <view class="li">
+        <view class="ti">风向角度</view>
+        <view class="tn">{{weatherInfo.wind360}}</view>
+      </view>
+      <view class="li">
+        <view class="ti">风速</view>
+        <view class="tn">{{weatherInfo.windSpeed}}公里/小时</view>
+      </view>
+      <view class="li">
+        <view class="ti">能见度</view>
+        <view class="tn">{{weatherInfo.vis}}公里</view>
+      </view>
+    </view>
+</view>

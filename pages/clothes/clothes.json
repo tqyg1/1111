@@ -1,4 +1,4 @@
 {
-  "usingComponents": {},
-  "navigationBarBackgroundColor": "#a7d3e8"
+  "navigationBarTitleText": "天气衣柜",
+  "usingComponents": {}
 }
