@@ -1,7 +1,24 @@
-<button class='abc' type="primary" bindtap="getData" >点击获取今日穿搭</button>
-<view class="a" wx:for="{{dataObj}}">
-  <view>{{item.ClothingRecommendation}}</view>
-  <view>{{item.tips}}</view>
+<view class="content">
+	<image class='background' src="../../icon/1.jpg" mode="aspectFill"></image>
+
+	<!--页面其它部分-->
+
+  <!--上衣推荐-->
+  <view>
+      <label>上衣推荐：</label>
+  </view>
+
+  <!--裤子推荐-->
+  <view>
+    <label>裤子推荐：</label>
+  </view>
+
+  <!--鞋子推荐-->
+  <view>
+    <label>鞋子推荐：</label>
+  </view> 
+
+
 </view>
 
 

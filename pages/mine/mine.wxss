@@ -1,90 +1,66 @@
-.container{
-  background-color: #eeeeee;
-  height : 100vh;
-}
 .partOne {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; 
+  align-items: center;  
+  vertical-align: center;
   background-color: #a7d3e8;
-  padding-top: 200rpx;
-  padding-bottom: 200rpx;
-  width: 400px;
-  height: 400px;
-}
-.userinfo {
-  display: flex;
-  align-items: center;
-  height: 128rpx;
-  margin-left: 40rpx;
-  color: rgb(255, 255, 255);
+  padding-top: 150rpx;
+  padding-bottom: 150rpx;
+  width: 100%;
+  height: 100rpx;
+  flex-direction:row; 
 }
 
 .userinfo-avatar {
   overflow: hidden;
-  width: 150rpx;
-  height: 150rpx;
-  margin: 30rpx;
+  width: 300rpx;
+  height: 300rpx;
+  margin: 10rpx;
   border-radius: 50%;
-}
-.userinfo-nickname {
-  height: 128rpx;
-}
-.partOne .scanicon{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 128rpx;
-  margin-right: 80rpx;
-}
-.partOne .scanicon image{
-  width: 80rpx;
-  height: 80rpx;
 }
 
 .partTwo{
-  height: 200rpx;
+  height: 100rpx;
   width: 90%;
-  margin-left: 5%;
+  margin-left: 4%;
+  margin-right: 5%;
   margin-top: 80rpx;
+  margin-bottom: 30rpx;
+  padding: 10rpx;
   background-color: #ffffff;
-  border: 1rpx solid rgb(176, 176, 176);
+  border: 2rpx solid  #a7d3e8;
   border-radius: 25rpx;
+  display: flex;   
+  vertical-align: center; 
+  flex-direction:row;
 }
 .partTwo .item{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100rpx;
+  position: absolute;
+  font-size: 15px;
+  background: white;
+  margin: -15px 0 0 10px;
+  padding: 0 5px;
+  color: #a7d3e8;
+  
 }
-.partTwo .item .itemname{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 210rpx;
-  margin-left: 20rpx;
+
+.input1 {
+  margin:  auto 10px;
 }
 
 
 .partThree{
-  height: 300rpx;
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 10rpx;
-  background-color: #ffffff;
-  border: 1rpx solid rgb(176, 176, 176);
-  border-radius: 25rpx;
-}
-
-.partThree .item{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 100rpx;
-}
-.partThree .item .itemname{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 210rpx;
-  margin-left: 20rpx;
+  width: 90%;
+  margin-left: 4%;
+  margin-right: 5%;
+  margin-top: 80rpx;
+  padding: 10rpx;
+  background-color: #ffffff;
+  border: 2rpx solid  #a7d3e8;
+  border-radius: 25rpx;
+  display: flex;   
+  align-items: center;   
+  vertical-align: center; 
+  justify-content: center; 
 }

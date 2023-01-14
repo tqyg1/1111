@@ -1,14 +1,11 @@
-<view class='container'>
-
-<!--头像名称-->
-<view class="partOne">
+  <!--头像名称-->
+  <view class="partOne">
   
-  <view class="userinfo">
+    <view class="userinfo">
     <block wx:if="{{canIUseOpenData}}">
       <view class="userinfo-avatar">
         <open-data type="userAvatarUrl"></open-data>
       </view>
-      <open-data type="userNickName"></open-data>
     </block>
     <block wx:elif="{{!hasUserInfo}}">
       <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
@@ -17,27 +14,19 @@
     </block>
     <block wx:else>
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-  </view>
-
-</view>
-
-<view class="partTwo">
-  <view class="item">
-    <view class="itemname">
-      <view ><text >我的签名</text></view>
     </view>
+
   </view>
-</view>
+
+  <view class="partTwo">
+      <text class="item">我的签名</text>
+      <input class="input1" placeholder="请输入"></input>
+  </view>
 
 
-<view class="partThree">
-  <view class="item">
-    <view class="itemname">
-      <view ><text >使用帮助</text></view>
-    </view>
+  <view class="partThree">
+    <text style>欢迎致电咨询或投诉,联系电话：010 - 123456</text>
   </view>
-</view>
-</view>
+
 
